@@ -19,6 +19,7 @@ public class DemoService extends AVersionService {
     @Override
     public void onResponses(AVersionService service, String response) {
       Log.e("DemoService", response);
-        service.showVersionDialog("http://www.apk3.com/uploads/soft/guiguangbao/UCllq.apk","检测到新版本",getString(R.string.updatecontent));
+        //service.showVersionDialog("http://www.apk3.com/uploads/soft/guiguangbao/UCllq.apk","检测到新版本",getString(R.string.updatecontent));
+        service.showVersionDialog("http://192.168.2.3:8000/app.apk","检测到新版本",getString(R.string.updatecontent));
     }
 }
